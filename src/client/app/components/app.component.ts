@@ -5,6 +5,7 @@ import {ToolbarComponent} from './toolbar.component';
 import {NameListService} from '../shared/index';
 import {HomeComponent} from '../+home/index';
 import {AboutComponent} from '../+about/index';
+import {HelloComponent} from '../hello/hello.component';
 
 @Component({
   selector: 'sd-app',
@@ -22,6 +23,11 @@ import {AboutComponent} from '../+about/index';
     path: '/about',
     name: 'About',
     component: AboutComponent
+  },
+  {
+    path: '/hello',
+    name: 'Hello',
+    component: HelloComponent
   }
 ])
 export class AppComponent {}
